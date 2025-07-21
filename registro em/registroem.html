@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/registro fe/registro.css">
+    <title>Registro de emprendimientos</title>
+</head>
+<body>
+    <h1>Registrar Emprendimiento</h1>
+    
+    <section class="form-section">
+        <form id="emprendimientoForm">
+          <select id="feriasSelect" required></select>
+          <input type="text" id="nombreem" placeholder="Nombre" required pattern="[A-Za-zÁ-ú\s]+" title="Solo se permiten letras y espacios"/>
+          <input type="text" id="categoria" placeholder="Categoria" required />
+          <input type="text" id="description" placeholder="Descripcion" required />
+          <input type="text" id="socials" placeholder="Enlace a red social" required />
+          <input type="text" id="product" placeholder="Producto y/o servicio" required />
+          <button type="submit">Agregar</button>
+        </form>
+        <a href="/registro fe/registro.html" class="btn-we"><button>Registrar ferias</button></a>
+    </section>
+
+    <section>
+        <h2>Listado de Ferias</h2>
+        <div id="listaFerias"></div>
+    </section>
+
+    <script src="/registro fe/registro.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Ferias</title>
+  <link rel="stylesheet" href="registro.css" />
+</head>
+<body>
+  <h1>Registrar Feria</h1>
+
+  <section class="form-section">
+    <form id="feriasForm">
+      <input type="text" id="nombre" placeholder="Nombre de el lugar" required pattern="[A-Za-zÁ-ú\s]+" title="Solo se permiten letras y espacios"/>
+      <input type="date" id="fechaini" required />
+      <input type="date" id="fechaend" required />
+      <input type="number" id="duracion" placeholder="Duración en horas" required min="1" />
+      <button type="submit">Registrar</button>
+    </form>
+  </section>
+  <a href="/registro em/registroem.html" class="btn-we"><button>Registrar emprendimiento</button></a>
+  <section>
+    <h2>Listado de Ferias</h2>
+    <div id="listaFerias"></div>
+  </section>
+  
+  <script src="/registro fe/registro.js"></script>
+</body>
+</html>
